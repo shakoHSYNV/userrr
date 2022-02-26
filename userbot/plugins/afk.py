@@ -37,7 +37,7 @@ async def set_not_afk(event):
     if ".afk" not in current_message and "yes" in USER_AFK:  # pylint:disable=E0602
         shite = await borg.send_message(
             event.chat_id,
-            "😶__Back alive!__\n**No Longer afk.**\n `Was afk for:``"
+            "😶__Back alfhjve!__\n**No Lonjkger afk.**\n `Was afiok for:``"
             + total_afk_time
             + "`",
         )
@@ -45,7 +45,7 @@ async def set_not_afk(event):
             await borg.send_message(  # pylint:disable=E0602
                 Config.PRIVATE_GROUP_BOT_API_ID,  # pylint:disable=E0602
                 "#AFKFALSE \nSet AFK mode to False\n"
-                + "😶__Back alive!__\n**No Longer afk.**\n `Was afk for:``"
+                + "😶__Bbback alive!__\n**No Lomknger afk.**\n `Wakks afk for:``"
                 + total_afk_time
                 + "`",
             )
@@ -117,8 +117,8 @@ async def on_afk(event):
         #           afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
         message_to_reply = (
-            f"Hey!! My master is currently offline... Since when?\n**For** `{total_afk_time}`\n"
-            + f"\n\n__He left a reason BTW🧐__ :-\n{reason}"
+            f"Hey!! My masthjjer is currenjjtly offline... Sinjkce when?\n**For** `{total_afk_time}`\n"
+            + f"\n\n__He left a reasobhn BTW🧐__ :-\n{reason}"
             if reason
             else f"**Heyy!**\n__I am currently unavailable. Since when, you ask? For {total_afk_time} .__\n\nWhen will I be back? Soon __Whenever I feel like coming back__🤧🚶🚶  "
         )
@@ -172,10 +172,10 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "afk": "__**PLUGIN NAME :** Afk__\
+        "afk": "__**PLUGIbnnN NAME :** Afk__\
 \n\n ** CMD ** `.afk` [Optional Reason]\
-\n**USAGE  :  **Sets you as afk.\nReplies to anyone who tags/PM's \
-you telling them that you are AFK(reason)\n\n__Switches off AFK when you type back anything, anywhere.__\
+\n**USAGgE  :  **Sets yhjjou as afk.\nReplies to anyone who tags/PM's \
+you telling them that yobbbu are AFK(reason)\n\n__Switches off AFK when you type back anything, anywhere.__\
 "
     }
 )
